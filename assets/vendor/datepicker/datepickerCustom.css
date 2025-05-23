@@ -1,0 +1,48 @@
+.datepicker {
+    z-index: 1600 !important;
+}
+
+.datepicker.datepicker-dropdown {
+    width: 222px;
+}
+
+.datepicker .datepicker-months table,
+.datepicker .datepicker-years table {
+    width: 100%;
+}
+
+.datepicker th {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active:hover.disabled,
+.datepicker table tr td.active.disabled.disabled,
+.datepicker table tr td.active.disabled:hover.disabled,
+.datepicker table tr td.active[disabled],
+.datepicker table tr td.active:hover[disabled],
+.datepicker table tr td.active.disabled[disabled],
+.datepicker table tr td.active.disabled:hover[disabled] {
+    background-color: #8b5cf6;
+}
+
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td span.active {
+    background-image: -webkit-linear-gradient(top, #8b5cf6, #8b5cf6);
+}

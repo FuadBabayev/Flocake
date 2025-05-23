@@ -1,0 +1,2567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowCake</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="assets/vendor/sweetalert2/sweetalert2-new.min.css">
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="assets/vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="assets/css/select.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <!-- Bootstrap DatePicker CSS -->
+    <link rel="stylesheet" href="assets/vendor/datepicker/datepicker.css">
+    <link rel="stylesheet" href="assets/vendor/datepicker/datepickerCustom.css">
+    <!-- Tippy and Scale CSS -->
+    <link rel="stylesheet" href="assets/vendor/tippy/scale.css">
+    <link rel="stylesheet" href="assets/vendor/tippy/tippy.css">
+    <!-- Preloader CSS -->
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <!-- Calculator CSS -->
+    <link rel="stylesheet" href="assets/vendor/calculator/calculator.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css?v=070320251740">
+</head>
+
+<body>
+    <!-- Preloader HTML -->
+    <div class="main-preloader">
+        <div class="loading_wrapper">
+            <div class="loading">
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader HTML -->
+
+    <!-- Header -->
+    <header class="d-none d-lg-block">
+        <div class="row header_wrapper">
+            <div class="col-6 header_wrapper_left">
+                <ul>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" data-bs-toggle="dropdown"
+                            data-tippy-content="Main Menu"><iconify-icon icon="solar:user-check-broken"
+                                width="22"></iconify-icon></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="" href="#">Change Profile</a></li>
+                            <li><a class="" href="#">Change Password</a></li>
+                            <li><a class="" href="#">Set Security Question</a></li>
+                            <li><a class="" href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" data-bs-toggle="dropdown"
+                            data-tippy-content="Language"><iconify-icon icon="ion:language"
+                                width="22"></iconify-icon></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="" href="#">Arabic</a></li>
+                            <li><a class="" href="#">Bangla</a></li>
+                            <li><a class="" href="#">English</a></li>
+                            <li><a class="" href="#">French</a></li>
+                            <li><a class="" href="#">Hindi</a></li>
+                            <li><a class="" href="#">Sinhala</a></li>
+                            <li><a class="" href="#">Spanish</a></li>
+                            <li><a class="" href="#">Urdu</a></li>
+                            <li><a class="" href="#">Vietnam</a></li>
+                        </ul>
+                    </li>
+                    <li data-bs-target="#openDraftSalesModal" data-bs-toggle="modal"><a href="javascript:void(0)"
+                            data-tippy-content="Open Draft Sales"><iconify-icon icon="solar:adhesive-plaster-broken"
+                                width="22"></iconify-icon></a></li>
+                    <li><a href="javascript:void(0)" data-tippy-content="Print Last Invoice"
+                            class="print_button"><iconify-icon icon="solar:printer-broken"
+                                width="22"></iconify-icon></a></li>
+                    <li data-bs-target="#recentSalesModal" data-bs-toggle="modal"><a href="javascript:void(0)"
+                            data-tippy-content="Recent Sales"><iconify-icon icon="solar:history-broken"
+                                width="22"></iconify-icon></a></li>
+                    <li><a href="javascript:void(0)" data-tippy-content="Calculator" id="calculator_button"
+                            class="calculator_button"><iconify-icon icon="solar:calculator-minimalistic-broken"
+                                width="22"></iconify-icon></a></li>
+                    <li data-bs-target="#registerModal" data-bs-toggle="modal"><a href="javascript:void(0)"
+                            data-tippy-content="Register"><iconify-icon icon="solar:document-add-broken"
+                                width="22"></iconify-icon></a></li>
+                    <li data-bs-target="#keyboardShortcutModal" data-bs-toggle="modal"><a href="javascript:void(0)"
+                            data-tippy-content="Keyboard Shortcut"><iconify-icon icon="solar:keyboard-broken"
+                                width="22"></iconify-icon></a></li>
+                    <li><a href="https://doorsoft-demo.com/off_pos/all_types/Dashboard/dashboard" target="_blank"
+                            data-tippy-content="Dashboard"><iconify-icon icon="solar:chart-2-broken"
+                                width="22"></iconify-icon></a></li>
+                    <li><a href="javascript:void(0)" class="customer_panel_button"
+                            data-tippy-content="Customer Panel"><iconify-icon icon="solar:monitor-broken"
+                                width="22"></iconify-icon></a></li>
+                </ul>
+                <ul>
+                    <li><a href="javascript:void(0)" class="currentTime"><iconify-icon icon="solar:clock-circle-broken"
+                                width="22"></iconify-icon></a></li>
+                    <li><a href="javascript:void(0)" data-tippy-content="Full Screen" class="fullscreen"><iconify-icon
+                                icon="solar:maximize-square-3-broken" width="22"></iconify-icon></a></li>
+                    <li><a href="javascript:void(0)" data-tippy-content="Main Menu"><iconify-icon
+                                icon="ri:menu-fold-fill" width="22"></iconify-icon></a></li>
+                </ul>
+            </div>
+            <div class="col-6 header_wrapper_right">
+                <div class="header_outlet fix-class">Urban</div>
+                <ul>
+                    <li>
+                        <div class="switchary_wrap"
+                            data-tippy-content="This button is disabled for demo. to check medicine shop experience please check medicine demo!">
+                            <select class="select2" disabled>
+                                <option value="">POS Experience</option>
+                                <option value="Regular" selected>Regular</option>
+                                <option value="Medicine">Medicine</option>
+                                <option value="Grocery">Grocery</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li><a href="javascript:void(0)" class="filter_buttons green">
+                            <div class="icon"><img src="assets/images/svg/circle.svg" alt=""></div>
+                            <div class="text">Online</div>
+                        </a></li>
+                    <li><a href="javascript:void(0)" class="filter_buttons blue">All</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" data-bs-toggle="dropdown" class="filter_buttons blue">Brand</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="" href="#">All</a></li>
+                            <li><a class="" href="#">MOTUL</a></li>
+                            <li><a class="" href="#">Logitech</a></li>
+                            <li><a class="" href="#">Bajaj</a></li>
+                            <li><a class="" href="#">UrbanGabru</a></li>
+                            <li><a class="" href="#">Samsung</a></li>
+                            <li><a class="" href="#">NIVEA</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" data-bs-toggle="dropdown" class="filter_buttons blue">Most
+                            Selling</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="" href="#">Most Selling</a></li>
+                            <li><a class="" href="#">Less Selling</a></li>
+                            <li><a class="" href="#">Not Selling</a></li>
+                        </ul>
+                    </li>
+                    <li data-bs-target="#promoModal" data-bs-toggle="modal"><a href="javascript:void(0)"
+                            class="filter_buttons blue">Promo</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+
+    <!-- Main Page -->
+    <main>
+        <div class="nav nav-tabs d-lg-none">
+            <a class="nav-link header_button blue" href="#product_section" data-bs-toggle="tab">
+                <div class="icon"><img src="assets/images/svg/products.svg" alt=""></div>
+                <div class="text">Products</div>
+            </a>
+            <a class="nav-link header_button yellow" href="#cart_section" data-bs-toggle="tab">
+                <div class="icon"><img src="assets/images/svg/cart.svg" alt=""></div>
+                <div class="text">Cart (3)</div>
+            </a>
+            <div class="dropdown">
+                <a class="header_button green" href="javascript:void(0)" data-bs-toggle="dropdown">
+                    <div class="icon"><img src="assets/images/svg/others.svg" alt=""></div>
+                    <div class="text">Others</div>
+                </a>
+                <div class="dropdown-menu">
+                    <div class="dropdown_categories">
+                        <ul>
+                            <li class="has_dropdown"><a href="javascript:void(0)"><iconify-icon
+                                        icon="solar:user-check-broken" width="22"></iconify-icon>
+                                    <div class="text">Main Menu</div>
+                                </a>
+                                <ul class="inner_dropdown">
+                                    <li><a class="" href="#">Change Profile</a></li>
+                                    <li><a class="" href="#">Change Password</a></li>
+                                    <li><a class="" href="#">Set Security Question</a></li>
+                                    <li><a class="" href="#">Log Out</a></li>
+                                </ul>
+                            </li>
+                            <li class="has_dropdown"><a href="javascript:void(0)"><iconify-icon icon="ion:language"
+                                        width="22"></iconify-icon>
+                                    <div class="text">Language</div>
+                                </a>
+                                <ul class="inner_dropdown">
+                                    <li><a class="" href="#">Arabic</a></li>
+                                    <li><a class="" href="#">Bangla</a></li>
+                                    <li><a class="" href="#">English</a></li>
+                                    <li><a class="" href="#">French</a></li>
+                                    <li><a class="" href="#">Hindi</a></li>
+                                    <li><a class="" href="#">Sinhala</a></li>
+                                    <li><a class="" href="#">Spanish</a></li>
+                                    <li><a class="" href="#">Urdu</a></li>
+                                    <li><a class="" href="#">Vietnam</a></li>
+                                </ul>
+                            </li>
+                            <li data-bs-target="#openDraftSalesModal" data-bs-toggle="modal"><a
+                                    href="javascript:void(0)"><iconify-icon icon="solar:adhesive-plaster-broken"
+                                        width="22"></iconify-icon>
+                                    <div class="text">Open Draft Sales</div>
+                                </a></li>
+                            <li data-bs-target="#recentSalesModal" data-bs-toggle="modal"><a
+                                    href="javascript:void(0)"><iconify-icon icon="solar:history-broken"
+                                        width="22"></iconify-icon>
+                                    <div class="text">Recent Sales</div>
+                                </a></li>
+                            <li data-bs-target="#registerModal" data-bs-toggle="modal"><a
+                                    href="javascript:void(0)"><iconify-icon icon="solar:document-add-broken"
+                                        width="22"></iconify-icon>
+                                    <div class="text">Register</div>
+                                </a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="https://doorsoft-demo.com/off_pos/all_types/Dashboard/dashboard"
+                                    target="_blank"><iconify-icon icon="solar:chart-2-broken" width="22"></iconify-icon>
+                                    <div class="text">Dashboard</div>
+                                </a></li>
+                            <li><a href="javascript:void(0)" class="print_button"><iconify-icon
+                                        icon="solar:printer-broken" width="22"></iconify-icon>
+                                    <div class="text">Print Last Invoice</div>
+                                </a></li>
+                            <li><a href="javascript:void(0)" id="calculator_button"
+                                    class="calculator_button"><iconify-icon icon="solar:calculator-minimalistic-broken"
+                                        width="22"></iconify-icon>
+                                    <div class="text">Calculator</div>
+                                </a></li>
+                            <li data-bs-target="#keyboardShortcutModal" data-bs-toggle="modal"><a
+                                    href="javascript:void(0)"><iconify-icon icon="solar:keyboard-broken"
+                                        width="22"></iconify-icon>
+                                    <div class="text">Keyboard Shortcut</div>
+                                </a></li>
+                            <li><a href="javascript:void(0)" class="customer_panel_button"><iconify-icon
+                                        icon="solar:monitor-broken" width="22"></iconify-icon>
+                                    <div class="text">Customer Panel</div>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab-content" id="main_part">
+            <section class="" id="cart_section">
+                <form action="">
+                    <div class="cart_header">
+                        <div class="form-group">
+                            <select class="recentSalesSelect">
+                                <option value="">Select Employee</option>
+                                <option value="">Miss.Sara</option>
+                                <option value="">Miss.Sofia</option>
+                                <option value="">Mr.Alex</option>
+                                <option value="">Mr.John</option>
+                                <option value="">Miss.Nicola</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="recentSalesSelect">
+                                <option value="">Select Customer</option>
+                                <option value="">Miss.Victoriya (+1 555-2345)</option>
+                                <option value="">Mr.John (+1 555-7890)</option>
+                                <option value="">Miss.Juniya (+1 555-3456)</option>
+                                <option value="">Mr.Alex (+1 555-9012)</option>
+                                <option value="">Mr.Gabrial (+1 555-5678)</option>
+                                <option value="">Mr.Thomas (+1 555-1234)</option>
+                                <option value="" selected>Walk-in Customer </option>
+                            </select>
+                        </div>
+                        <div class="cart_header_modal_opener" data-bs-target="#editCustomerModal"
+                            data-bs-toggle="modal"><img src="assets/images/svg/crayon.svg" alt=""></div>
+                        <div class="cart_header_modal_opener" data-bs-target="#addCustomerModal" data-bs-toggle="modal">
+                            <img src="assets/images/svg/add.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cart_body">
+                        <div class="customer_details">
+                            <div class="customer_details_header">
+                                <div class="draftItemList">
+                                    <div class="item">Item</div>
+                                    <div class="price">Price</div>
+                                    <div class="qty">Qty</div>
+                                    <div class="discount">Discount</div>
+                                    <div class="total">Sub Total</div>
+                                </div>
+                            </div>
+                            <div class="customer_details_body">
+
+                                <div class="draftItemList">
+                                    <div class="item">
+                                        <div class="edit" data-bs-target="#addToCartModal" data-bs-toggle="modal"><img
+                                                src="assets/images/svg/crayon.svg" alt=""></div>
+                                        <div class="picture"><img src="assets/images/cart/shirt.png" alt=""></div>
+                                        <div class="text">
+                                            <p>A-Cal D Tablet 500 mg+200 IU (15Pcs Pot)(10001)</p>
+                                            <span>Medicine: 2025-11-12</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">7.01</div>
+                                    <div class="qty">
+                                        <div class="input">
+                                            <div class="minus"><img src="assets/images/svg/minus.svg"></div>
+                                            <input type="number" value="2" min="1" max="999">
+                                            <div class="plus"><img src="assets/images/svg/plus.svg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="discount"><input type="number" value="0"></div>
+                                    <div class="total">
+                                        <div class="text">21.03</div>
+                                        <div class="icon"><img src="assets/images/svg/trash.svg"></div>
+                                    </div>
+                                </div>
+                                <div class="draftItemList">
+                                    <div class="item">
+                                        <div class="edit" data-bs-target="#addToCartModal" data-bs-toggle="modal"><img
+                                                src="assets/images/svg/crayon.svg" alt=""></div>
+                                        <div class="picture"><img src="assets/images/cart/coca-cola.png" alt=""></div>
+                                        <div class="text">
+                                            <p>A-Cal D Tablet 500 mg+200 IU (15Pcs Pot)(10001)</p>
+                                            <span>Medicine: 2025-11-12</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">7.01</div>
+                                    <div class="qty">
+                                        <div class="input">
+                                            <div class="minus"><img src="assets/images/svg/minus.svg"></div>
+                                            <input type="number" value="3" min="1" max="999">
+                                            <div class="plus"><img src="assets/images/svg/plus.svg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="discount"><input type="number" value="0"></div>
+                                    <div class="total">
+                                        <div class="text">21.03</div>
+                                        <div class="icon"><img src="assets/images/svg/trash.svg"></div>
+                                    </div>
+                                </div>
+                                <div class="draftItemList">
+                                    <div class="item">
+                                        <div class="edit" data-bs-target="#addToCartModal" data-bs-toggle="modal"><img
+                                                src="assets/images/svg/crayon.svg" alt=""></div>
+                                        <div class="picture"><img src="assets/images/cart/sneaker2.png" alt=""></div>
+                                        <div class="text">
+                                            <p>Apple 16GB DDR4 3200MHz SO-DIMM(277)</p>
+                                            <span>Serial: DFUYRTDDKMJDF</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">23324.00</div>
+                                    <div class="qty">
+                                        <div class="input">
+                                            <div class="minus"><img src="assets/images/svg/minus.svg"></div>
+                                            <input type="number" value="1" min="1" max="999">
+                                            <div class="plus"><img src="assets/images/svg/plus.svg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="discount"><input type="number" value="0"></div>
+                                    <div class="total">
+                                        <div class="text">23324.00</div>
+                                        <div class="icon"><img src="assets/images/svg/trash.svg"></div>
+                                    </div>
+                                </div>
+                                <div class="draftItemList">
+                                    <div class="item">
+                                        <div class="edit" data-bs-target="#addToCartModal" data-bs-toggle="modal"><img
+                                                src="assets/images/svg/crayon.svg" alt=""></div>
+                                        <div class="picture"><img src="assets/images/cart/ball.png" alt=""></div>
+                                        <div class="text">
+                                            <p>A-Cal D Tablet 500 mg+200 IU (15Pcs Pot)(10001)</p>
+                                            <span>Medicine: 2025-11-12</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">7.01</div>
+                                    <div class="qty">
+                                        <div class="input">
+                                            <div class="minus"><img src="assets/images/svg/minus.svg"></div>
+                                            <input type="number" value="2" min="1" max="999">
+                                            <div class="plus"><img src="assets/images/svg/plus.svg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="discount"><input type="number" value="0"></div>
+                                    <div class="total">
+                                        <div class="text">21.03</div>
+                                        <div class="icon"><img src="assets/images/svg/trash.svg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart_footer">
+                        <div class="customer_total_description">
+                            <div class="customer_total_description_item">
+                                <div class="icon" data-bs-target="#noteModal" data-bs-toggle="modal"
+                                    data-tippy-content="Note"><img src="assets/images/svg/paper.svg" alt=""></div>
+                                <div class="icon calendar" data-tippy-content="Invoice Date"><img
+                                        src="assets/images/svg/calendar.svg" alt=""><input type="text"
+                                        autocomplete="off" class="datepicker"></div>
+                                <div class="icon" data-bs-target="#couponDiscountModal" data-bs-toggle="modal"
+                                    data-tippy-content="Coupon Discount"><img src="assets/images/svg/scissors.svg"
+                                        alt=""></div>
+                            </div>
+                            <div class="customer_total_description_item">Sub Total: <span>0.00</span></div>
+                            <div class="customer_total_description_item">Total Item: <span>0 (00)</span></div>
+                            <div class="customer_total_description_item">Tax: <div class="icon"
+                                    data-bs-target="#taxModal" data-bs-toggle="modal" data-tippy-content="Tax Details">
+                                    <img src="assets/images/svg/eye.svg" alt="">
+                                </div>
+                                <span>0.00</span>
+                            </div>
+                            <div class="customer_total_description_item">Charge: <div class="icon"
+                                    data-bs-target="#chargeModal" data-bs-toggle="modal" data-tippy-content="Charge">
+                                    <img src="assets/images/svg/money.svg" alt="">
+                                </div>
+                                <span>0.00</span>
+                            </div>
+                            <div class="customer_total_description_item">Discount: <div class="icon"
+                                    data-bs-target="#discountModal" data-bs-toggle="modal"
+                                    data-tippy-content="Discount"><img src="assets/images/svg/money.svg" alt=""></div>
+                                <span>0.00 (0.00)</span>
+                            </div>
+                            <div class="customer_total_description_item">Delivery Partner: <div class="icon"
+                                    data-bs-target="#deliveryPartnerModal" data-bs-toggle="modal"
+                                    data-tippy-content="Delivery Partner"><img src="assets/images/svg/partner.svg"
+                                        alt=""></div>
+                            </div>
+                            <div class="customer_total_description_item">Rounding: <span>0.00</span></div>
+                        </div>
+                        <div class="total_payable">Total Payable: <span>0.00</span></div>
+                        <div class="cart_footer_buttons">
+                            <button type="button" class="cancel red">
+                                <div class="icon"><img src="assets/images/svg/cancelCircle.svg" alt=""></div>
+                                <div class="text">Cancel</div>
+                            </button>
+                            <button type="button" class="deleteOneDraft yellow" data-bs-target="#holdModal"
+                                data-bs-toggle="modal">
+                                <div class="icon"><img src="assets/images/svg/rocket.svg" alt=""></div>
+                                <div class="text">Hold</div>
+                            </button>
+                            <button type="button" class="blue" data-bs-target="#morePaymentModal"
+                                data-bs-toggle="modal">
+                                <div class="icon"><img src="assets/images/svg/morePayment.svg" alt=""></div>
+                                <div class="text">More Payment</div>
+                            </button>
+                            <button type="button" class="green" data-bs-target="#paymentModal" data-bs-toggle="modal">
+                                <div class="icon"><img src="assets/images/svg/payment.svg" alt=""></div>
+                                <div class="text">Payment</div>
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </section>
+
+
+
+            <section class="" id="product_section">
+                <form action="">
+                    <div class="product_header">
+                        <div class="form-group">
+                            <label for="searchInput" class="search"><img src="assets/images/svg/search.svg"
+                                    alt=""></label>
+                            <input type="text" id="searchInput"
+                                placeholder="Search by name, code, category and Barcode">
+                            <div class="barcode" data-bs-target="#barcodeScannerModal" data-bs-toggle="modal"><img
+                                    src="assets/images/svg/barcode.svg" alt=""></div>
+                        </div>
+                        <div class="filter_offcanvas_opener d-sm-none" data-bs-toggle="offcanvas"
+                            data-bs-target=".filter_offcanvas">
+                            <div class="icon"><img src="assets/images/svg/filter.svg" alt=""></div>
+                            <div class="text">Filter</div>
+                        </div>
+                    </div>
+                    <div class="product_body">
+                        <div class="category_wrapper">
+                            <div class="category_carousel">
+                                <div class="category_carousel_left"><a class="all_categories active"
+                                        href="javascript:void(0)">All Categories</a></div>
+                                <div class="category_carousel_right">
+                                    <div class="swiper myCategorySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">Mobile
+                                                        Servicing</a></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">Laptop
+                                                        Servicing</a></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">Electronic</a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">Bike
+                                                        Servicing</a></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">Car
+                                                        Servicing</a></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">Product</a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">Dishwashing
+                                                        Supplies</a></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">Personal
+                                                        Care</a></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">Accessories</a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">Pet Care</a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">Baby Care</a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">Soft Drink</a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">Fruits &
+                                                        Vegetables</a></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">Cooking</a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">Home &
+                                                        Kitchen</a></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">RAM and
+                                                        Processor</a></div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="category_link"><a href="javascript:void(0)">Smart Watch</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products_wrapper">
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$250.00</div>
+                                    <img src="assets/images/cart/sneaker.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Nike Air Force Red Sneaker</div>
+                                    <div class="barcodeNumber">8964000101704</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$49.50</div>
+                                    <img src="assets/images/cart/pizza.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Margherita Pizza</div>
+                                    <div class="barcodeNumber">6236245242662</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$76.00</div>
+                                    <img src="assets/images/cart/shirt.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Custom Event T-Shirt</div>
+                                    <div class="barcodeNumber">3448205623582</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$135.00</div>
+                                    <img src="assets/images/cart/sneaker2.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Adidas Black White</div>
+                                    <div class="barcodeNumber">7826482957347</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$755.00</div>
+                                    <img src="assets/images/cart/ball.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Nike Premium Ball</div>
+                                    <div class="barcodeNumber">9823548203984</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$3.49</div>
+                                    <img src="assets/images/cart/coca-cola.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Coca Cola 0.5L</div>
+                                    <div class="barcodeNumber">5462749175903</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$250.00</div>
+                                    <img src="assets/images/cart/sneaker.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Nike Air Force Red Sneaker</div>
+                                    <div class="barcodeNumber">8964000101704</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$49.50</div>
+                                    <img src="assets/images/cart/pizza.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Margherita Pizza</div>
+                                    <div class="barcodeNumber">6236245242662</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$76.00</div>
+                                    <img src="assets/images/cart/shirt.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Custom Event T-Shirt</div>
+                                    <div class="barcodeNumber">3448205623582</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$135.00</div>
+                                    <img src="assets/images/cart/sneaker2.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Adidas Black White</div>
+                                    <div class="barcodeNumber">7826482957347</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$755.00</div>
+                                    <img src="assets/images/cart/ball.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Nike Premium Ball</div>
+                                    <div class="barcodeNumber">9823548203984</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$3.49</div>
+                                    <img src="assets/images/cart/coca-cola.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Coca Cola 0.5L</div>
+                                    <div class="barcodeNumber">5462749175903</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$250.00</div>
+                                    <img src="assets/images/cart/sneaker.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Nike Air Force Red Sneaker</div>
+                                    <div class="barcodeNumber">8964000101704</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$49.50</div>
+                                    <img src="assets/images/cart/pizza.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Margherita Pizza</div>
+                                    <div class="barcodeNumber">6236245242662</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$76.00</div>
+                                    <img src="assets/images/cart/shirt.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Custom Event T-Shirt</div>
+                                    <div class="barcodeNumber">3448205623582</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$135.00</div>
+                                    <img src="assets/images/cart/sneaker2.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Adidas Black White</div>
+                                    <div class="barcodeNumber">7826482957347</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$755.00</div>
+                                    <img src="assets/images/cart/ball.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Nike Premium Ball</div>
+                                    <div class="barcodeNumber">9823548203984</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$3.49</div>
+                                    <img src="assets/images/cart/coca-cola.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Coca Cola 0.5L</div>
+                                    <div class="barcodeNumber">5462749175903</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$250.00</div>
+                                    <img src="assets/images/cart/sneaker.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Nike Air Force Red Sneaker</div>
+                                    <div class="barcodeNumber">8964000101704</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$49.50</div>
+                                    <img src="assets/images/cart/pizza.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Margherita Pizza</div>
+                                    <div class="barcodeNumber">6236245242662</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$76.00</div>
+                                    <img src="assets/images/cart/shirt.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Custom Event T-Shirt</div>
+                                    <div class="barcodeNumber">3448205623582</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$135.00</div>
+                                    <img src="assets/images/cart/sneaker2.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Adidas Black White</div>
+                                    <div class="barcodeNumber">7826482957347</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$755.00</div>
+                                    <img src="assets/images/cart/ball.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Nike Premium Ball</div>
+                                    <div class="barcodeNumber">9823548203984</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$3.49</div>
+                                    <img src="assets/images/cart/coca-cola.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Coca Cola 0.5L</div>
+                                    <div class="barcodeNumber">5462749175903</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$250.00</div>
+                                    <img src="assets/images/cart/sneaker.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Nike Air Force Red Sneaker</div>
+                                    <div class="barcodeNumber">8964000101704</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$49.50</div>
+                                    <img src="assets/images/cart/pizza.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Margherita Pizza</div>
+                                    <div class="barcodeNumber">6236245242662</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$76.00</div>
+                                    <img src="assets/images/cart/shirt.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Custom Event T-Shirt</div>
+                                    <div class="barcodeNumber">3448205623582</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$135.00</div>
+                                    <img src="assets/images/cart/sneaker2.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Adidas Black White</div>
+                                    <div class="barcodeNumber">7826482957347</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$755.00</div>
+                                    <img src="assets/images/cart/ball.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Nike Premium Ball</div>
+                                    <div class="barcodeNumber">9823548203984</div>
+                                </div>
+                            </div>
+                            <div class="product_item" data-bs-target="#addToCartModal" data-bs-toggle="modal">
+                                <div class="product_top">
+                                    <div class="price">$3.49</div>
+                                    <img src="assets/images/cart/coca-cola.png" alt="">
+                                </div>
+                                <div class="product_bottom">
+                                    <div class="name">Coca Cola 0.5L</div>
+                                    <div class="barcodeNumber">5462749175903</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <!-- Main Page -->
+
+
+    <!-- Calculator -->
+    <div class="overlayForCalculator"></div>
+    <div id="calculator_main">
+        <div class="calculator">
+            <input type="text" autocomplete="off" readonly>
+            <div class="row">
+                <div class="key">1</div>
+                <div class="key">2</div>
+                <div class="key">3</div>
+                <div class="key last">0</div>
+            </div>
+            <div class="row">
+                <div class="key">4</div>
+                <div class="key">5</div>
+                <div class="key">6</div>
+                <div class="key last action instant">cl</div>
+            </div>
+            <div class="row">
+                <div class="key">7</div>
+                <div class="key">8</div>
+                <div class="key">9</div>
+                <div class="key last action instant">=</div>
+            </div>
+            <div class="row">
+                <div class="key action">+</div>
+                <div class="key action">-</div>
+                <div class="key action">x</div>
+                <div class="key action">/</div>
+            </div>
+        </div>
+    </div>
+    <!-- Calculator -->
+
+
+
+    <!-- Open Draft Sales Modal -->
+    <div class="modal fade mainModal" id="openDraftSalesModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">Hold Sales</h2>
+                </div>
+                <form class="modal_body">
+                    <div class="modal_body_left">
+                        <div class="header">
+                            <div class="draftList">
+                                <div class="number">No</div>
+                                <div class="customer">Customer</div>
+                                <div class="dateTime">Date Time</div>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <div class="draftList">
+                                <div class="number">1</div>
+                                <div class="customer">Walk-in Customer()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">2</div>
+                                <div class="customer">Customer()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">3</div>
+                                <div class="customer">Walk-in()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">4</div>
+                                <div class="customer">()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">5</div>
+                                <div class="customer">Walk-in Customer()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">6</div>
+                                <div class="customer">Customer()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">7</div>
+                                <div class="customer">Walk-in()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">8</div>
+                                <div class="customer">()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">9</div>
+                                <div class="customer">Walk-in Customer()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">10</div>
+                                <div class="customer">Walk-in Customer()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">11</div>
+                                <div class="customer">Walk-in Customer()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">12</div>
+                                <div class="customer">Walk-in Customer()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">13</div>
+                                <div class="customer">Walk-in Customer()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">14</div>
+                                <div class="customer">Walk-in Customer()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">15</div>
+                                <div class="customer">Walk-in Customer()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">16</div>
+                                <div class="customer">Walk-in Customer()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">17</div>
+                                <div class="customer">Walk-in Customer()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">18</div>
+                                <div class="customer">Walk-in Customer()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">19</div>
+                                <div class="customer">Walk-in Customer()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">20</div>
+                                <div class="customer">Walk-in Customer()</div>
+                                <div class="dateTime">08/31/2024 18:18:38</div>
+                            </div>
+                        </div>
+                        <div class="footer"><button type="button" class="deleteAllDrafts">Delete all Hold Sales</button>
+                        </div>
+                    </div>
+                    <div class="modal_body_right">
+                        <div class="header">Sale Details</div>
+                        <div class="body">
+                            <div class="customer_name">Customer: <span><!-- Walk-in Customer --></span></div>
+
+                            <div class="customer_details">
+                                <div class="customer_details_header">
+                                    <div class="draftItemList">
+                                        <div class="item">Item</div>
+                                        <div class="price">Price</div>
+                                        <div class="qty">Qty</div>
+                                        <div class="discount">Discount</div>
+                                        <div class="total">Total</div>
+                                    </div>
+                                </div>
+                                <div class="customer_details_body">
+                                    <!-- <div class="draftItemList">
+                                        <div class="item">null(null)</div>
+                                        <div class="price">350.00</div>
+                                        <div class="qty">1</div>
+                                        <div class="discount">0.00</div>
+                                        <div class="total">350.00</div>
+                                    </div>
+                                    <div class="draftItemList">
+                                        <div class="item">ACI Pure Flour(Atta)(453)</div>
+                                        <div class="price">130.00</div>
+                                        <div class="qty">3</div>
+                                        <div class="discount">0.00</div>
+                                        <div class="total">390.00</div>
+                                    </div>
+                                    <div class="draftItemList">
+                                        <div class="item">Asus 4G-AC68U (AC1900 4G LTE Router)(233) <span>IMEI: 360728091234570</span></div>
+                                        <div class="price">35066.00</div>
+                                        <div class="qty">1</div>
+                                        <div class="discount">0.00</div>
+                                        <div class="total">35066.00</div>
+                                    </div> -->
+                                </div>
+                            </div>
+
+                            <div class="customer_total_description">
+                                <div class="customer_total_description_item">Sub Total: <span>0.00</span></div>
+                                <div class="customer_total_description_item">Total Item: <span>0 (00)</span></div>
+                                <div class="customer_total_description_item">Tax: <span>0.00</span></div>
+                                <div class="customer_total_description_item">Charge: <span>0.00</span></div>
+                                <div class="customer_total_description_item">Discount: <span>0.00 (0.00)</span></div>
+                            </div>
+                        </div>
+                        <div class="header second">Total Payable: <span>0.00</span></div>
+                        <div class="footer">
+                            <button type="button" class="editOneDraft green">Edit in Cart</button>
+                            <button type="button" class="deleteOneDraft red">Delete</button>
+                            <button type="button" class="yellow" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Open Draft Sales Modal -->
+
+
+    <!-- Recent Sales Modal -->
+    <div class="modal fade mainModal" id="recentSalesModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">Sales</h2>
+                </div>
+                <form class="modal_body">
+                    <div class="modal_body_top">
+                        <div class="form-group"><input type="text" placeholder="Date" autocomplete="off"
+                                class="datepicker"></div>
+                        <div class="form-group">
+                            <select class="recentSalesSelect">
+                                <option value="">Customer</option>
+                                <option value="">Walk-in Customer </option>
+                                <option value="">Mr.Thomas (+1 555-1234)</option>
+                                <option value="">Mr.Gabrial (+1 555-5678)</option>
+                                <option value="">Mr.Alex (+1 555-9012)</option>
+                                <option value="">Miss.Juniya (+1 555-3456)</option>
+                                <option value="">Mr.John (+1 555-7890)</option>
+                                <option value="">Miss.Victoriya (+1 555-2345)</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><input type="text" autocomplete="off" placeholder="Invoice No"></div>
+                        <div class="form-group"><button type="button">Search</button></div>
+                    </div>
+
+                    <div class="modal_body_left">
+                        <div class="header">
+                            <div class="draftList">
+                                <div class="number">No</div>
+                                <div class="customer">Customer</div>
+                                <div class="dateTime">Date Time</div>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <div class="noItem">There is no sale found</div> <!-- If there is no any item -->
+
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                            <div class="draftList">
+                                <div class="number">INV228</div>
+                                <div class="customer">Walk-in Customer</div>
+                                <div class="dateTime">02/06/2025 12:44:27</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal_body_right">
+                        <div class="header">Sale Details</div>
+
+                        <div class="body">
+                            <div class="customer_name">
+                                <div class="customer_name_item">Invoice No: <span><!-- INV228 --></span></div>
+                                <div class="customer_name_item">Date Time: <span><!-- 02/06/2025 13:11:40 --></span>
+                                </div>
+                                <div class="customer_name_item">Customer: <span><!-- Walk-in Customer --></span></div>
+                            </div>
+
+                            <div class="customer_details">
+                                <div class="customer_details_header">
+                                    <div class="draftItemList">
+                                        <div class="item">Item</div>
+                                        <div class="price">Price</div>
+                                        <div class="qty">Qty</div>
+                                        <div class="discount">Discount</div>
+                                        <div class="total">Total</div>
+                                    </div>
+                                </div>
+                                <div class="customer_details_body">
+                                    <!-- <div class="draftItemList">
+                                            <div class="item">null(null)</div>
+                                            <div class="price">350.00</div>
+                                            <div class="qty">1</div>
+                                            <div class="discount">0.00</div>
+                                            <div class="total">350.00</div>
+                                        </div>
+                                        <div class="draftItemList">
+                                            <div class="item">ACI Pure Flour(Atta)(453)</div>
+                                            <div class="price">130.00</div>
+                                            <div class="qty">3</div>
+                                            <div class="discount">0.00</div>
+                                            <div class="total">390.00</div>
+                                        </div>
+                                        <div class="draftItemList">
+                                            <div class="item">Asus 4G-AC68U (AC1900 4G LTE Router)(233) <span>IMEI: 360728091234570</span></div>
+                                            <div class="price">35066.00</div>
+                                            <div class="qty">1</div>
+                                            <div class="discount">0.00</div>
+                                            <div class="total">35066.00</div>
+                                        </div> -->
+                                </div>
+                            </div>
+
+                            <div class="customer_total_description">
+                                <div class="customer_total_description_item">Sub Total: <span>0.00</span></div>
+                                <div class="customer_total_description_item">Total Item: <span>0 (00)</span></div>
+                                <div class="customer_total_description_item">Tax: <span>0.00</span></div>
+                                <div class="customer_total_description_item">Charge: <span>0.00</span></div>
+                                <div class="customer_total_description_item">Discount: <span>0.00 (0.00)</span></div>
+                            </div>
+                        </div>
+
+                        <div class="header second">Total Payable: <span>0.00</span></div>
+                        <div class="amount">
+                            <div class="paid_amount">Paid Amount: <span>0.00</span></div>
+                            <div class="due_amount">Due Amount: <span>0.00</span></div>
+                        </div>
+                        <div class="footer">
+                            <button type="button" class="print_button blue">Print Invoice</button>
+                            <button type="button" class="print_button blue">Print Challan</button>
+                            <button type="submit" class="yellow">Edit</button>
+                            <button type="button" class="deleteOneSale red">Delete</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Recent Sales Modal -->
+
+
+    <!-- Register Modal -->
+    <div class="modal fade mainModal" id="registerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">Register Details</h2>
+                </div>
+                <div class="modal_body">
+                    <table>
+                        <tr>
+                            <td class="bold">User</td>
+                            <td colspan="3">Demo Admin</td>
+                        </tr>
+                        <tr class="gapFromBottom">
+                            <td class="bold">Time Range</td>
+                            <td colspan="3">2025-02-04 12:02:56 PM to 2025-02-04 04:01:34 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">SN</td>
+                            <td class="bold">Payment Method</td>
+                            <td class="bold">Transactions</td>
+                            <td class="bold">Amount</td>
+                        </tr>
+                        <tr class="gapFromBottom">
+                            <td>1</td>
+                            <td>Bank</td>
+                            <td>
+                                <ul>
+                                    <li>Opening Balance (+)</li>
+                                    <li>Purchase (-)</li>
+                                    <li>Purchase Return (+)</li>
+                                    <li>Supplier Payment (-)</li>
+                                    <li>Sale (+)</li>
+                                    <li>Customer Due Receive (+)</li>
+                                    <li>Expense (-)</li>
+                                    <li>Sale Return (-)</li>
+                                    <li>Down Payment (+)</li>
+                                    <li>Installment Collection (+)</li>
+                                    <li>Servicing (+)</li>
+                                    <li class="bold">Closing Balance</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li class="bold">৳0.00</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr class="gapFromBottom">
+                            <td>2</td>
+                            <td>Cash</td>
+                            <td>
+                                <ul>
+                                    <li>Opening Balance (+)</li>
+                                    <li>Purchase (-)</li>
+                                    <li>Purchase Return (+)</li>
+                                    <li>Supplier Payment (-)</li>
+                                    <li>Sale (+)</li>
+                                    <li>Customer Due Receive (+)</li>
+                                    <li>Expense (-)</li>
+                                    <li>Sale Return (-)</li>
+                                    <li>Down Payment (+)</li>
+                                    <li>Installment Collection (+)</li>
+                                    <li>Servicing (+)</li>
+                                    <li class="bold">Closing Balance</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li class="bold">৳0.00</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr class="gapFromBottom">
+                            <td>3</td>
+                            <td>Paypal</td>
+                            <td>
+                                <ul>
+                                    <li>Opening Balance (+)</li>
+                                    <li>Purchase (-)</li>
+                                    <li>Purchase Return (+)</li>
+                                    <li>Supplier Payment (-)</li>
+                                    <li>Sale (+)</li>
+                                    <li>Customer Due Receive (+)</li>
+                                    <li>Expense (-)</li>
+                                    <li>Sale Return (-)</li>
+                                    <li>Down Payment (+)</li>
+                                    <li>Installment Collection (+)</li>
+                                    <li>Servicing (+)</li>
+                                    <li class="bold">Closing Balance</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li class="bold">৳0.00</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr class="gapFromBottom">
+                            <td>4</td>
+                            <td>Stripe</td>
+                            <td>
+                                <ul>
+                                    <li>Opening Balance (+)</li>
+                                    <li>Purchase (-)</li>
+                                    <li>Purchase Return (+)</li>
+                                    <li>Supplier Payment (-)</li>
+                                    <li>Sale (+)</li>
+                                    <li>Customer Due Receive (+)</li>
+                                    <li>Expense (-)</li>
+                                    <li>Sale Return (-)</li>
+                                    <li>Down Payment (+)</li>
+                                    <li>Installment Collection (+)</li>
+                                    <li>Servicing (+)</li>
+                                    <li class="bold">Closing Balance</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li>৳0.00</li>
+                                    <li class="bold">৳0.00</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr class="gapFromBottom">
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <ul>
+                                    <li class="bold">Summary</li>
+                                    <li class="bold">Bank</li>
+                                    <li class="bold">Cash</li>
+                                    <li class="bold">Paypal</li>
+                                    <li class="bold">Stripe</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li class="bold">&nbsp;</li>
+                                    <li class="bold">৳0.00</li>
+                                    <li class="bold">৳0.00</li>
+                                    <li class="bold">৳0.00</li>
+                                    <li class="bold">৳0.00</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal_footer">
+                    <button class="close_register_button blue">Close Register</button>
+                    <button class="cancel_button red" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Register Modal -->
+
+
+    <!-- Keyboard Shortcut Modal -->
+    <div class="modal fade mainModal" id="keyboardShortcutModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">Keyboard Shortcut</h2>
+                </div>
+                <div class="modal_body">
+                    <div class="shortcut_list">
+                        <div class="shortcut_number bold">#</div>
+                        <div class="shortcut_key bold">Key</div>
+                        <div class="shortcut_description bold">Value</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">1</div>
+                        <div class="shortcut_key">Alt + f</div>
+                        <div class="shortcut_description">Fullscreen mode</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">2</div>
+                        <div class="shortcut_key">Alt + o</div>
+                        <div class="shortcut_description">Open Promo Modal</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">3</div>
+                        <div class="shortcut_key">Alt + c</div>
+                        <div class="shortcut_description">Add Customer</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">4</div>
+                        <div class="shortcut_key">Alt + x</div>
+                        <div class="shortcut_description">Edit Customer</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">5</div>
+                        <div class="shortcut_key">Alt + d</div>
+                        <div class="shortcut_description">Draft Sale</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">6</div>
+                        <div class="shortcut_key">Alt + t</div>
+                        <div class="shortcut_description">Last Ten Sale</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">7</div>
+                        <div class="shortcut_key">Alt + r</div>
+                        <div class="shortcut_description">View Register</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">8</div>
+                        <div class="shortcut_key">Alt + e</div>
+                        <div class="shortcut_description">Open Calculator</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">9</div>
+                        <div class="shortcut_key">Alt + k</div>
+                        <div class="shortcut_description">Keyboard Shortcut</div>
+                    </div>
+                    <h3>Sale Shortcut</h3>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">10</div>
+                        <div class="shortcut_key">Shift + p</div>
+                        <div class="shortcut_description">Payment or Place Order</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">11</div>
+                        <div class="shortcut_key">Shift + m</div>
+                        <div class="shortcut_description">Add More Payment or Place Order</div>
+                    </div>
+                    <h3>Sale Shortcut when grocery experience is active</h3>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">12</div>
+                        <div class="shortcut_key">ArrowDown</div>
+                        <div class="shortcut_description">Move to next item</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">13</div>
+                        <div class="shortcut_key">ArrowUp</div>
+                        <div class="shortcut_description">Move to previous item</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">14</div>
+                        <div class="shortcut_key">ArrowRight</div>
+                        <div class="shortcut_description">Move to next category type</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">15</div>
+                        <div class="shortcut_key">ArrowLeft</div>
+                        <div class="shortcut_description">Move to previous category type</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">16</div>
+                        <div class="shortcut_key">Enter</div>
+                        <div class="shortcut_description">Enter to go sale next step</div>
+                    </div>
+                    <h3>Sale Shortcut when item modal is active</h3>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">17</div>
+                        <div class="shortcut_key">Shift + a</div>
+                        <div class="shortcut_description">Item add to cart</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">18</div>
+                        <div class="shortcut_key">Shift + c</div>
+                        <div class="shortcut_description">Close item modal</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">19</div>
+                        <div class="shortcut_key">Tab</div>
+                        <div class="shortcut_description">Switch 1 element to another</div>
+                    </div>
+                    <h3>Sale Shortcut when finalize payment modal active</h3>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">20</div>
+                        <div class="shortcut_key">Shift + n</div>
+                        <div class="shortcut_description">Open Note Modal</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">21</div>
+                        <div class="shortcut_key">Shift + k</div>
+                        <div class="shortcut_description">Invoice Date (Calendar)</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">22</div>
+                        <div class="shortcut_key">Shift + s</div>
+                        <div class="shortcut_description">Sale Coupon Discount</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">23</div>
+                        <div class="shortcut_key">Shift + t</div>
+                        <div class="shortcut_description">Tax Table</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">24</div>
+                        <div class="shortcut_key">Shift + g</div>
+                        <div class="shortcut_description">Charge Modal</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">25</div>
+                        <div class="shortcut_key">Shift + d</div>
+                        <div class="shortcut_description">Discount Modal</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">26</div>
+                        <div class="shortcut_key">Shift + x</div>
+                        <div class="shortcut_description">Delivery Partner</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">27</div>
+                        <div class="shortcut_key">Shift + h</div>
+                        <div class="shortcut_description">Hold Added Items</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">28</div>
+                        <div class="shortcut_key">Shift + c</div>
+                        <div class="shortcut_description">Cancel Finalize Modal</div>
+                    </div>
+                    <h3>Other</h3>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">29</div>
+                        <div class="shortcut_key">Shift + F</div>
+                        <div class="shortcut_description">Focus Search Box</div>
+                    </div>
+                    <div class="shortcut_list">
+                        <div class="shortcut_number">30</div>
+                        <div class="shortcut_key">Shift + B</div>
+                        <div class="shortcut_description">Activate Barcode Box</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Keyboard Shortcut Modal -->
+
+
+    <!-- Promo Modal -->
+    <div class="modal fade mainModal" id="promoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">Promotion Items</h2>
+                </div>
+                <div class="modal_body">
+                    <div class="promo_modal_wrap">
+                        <div class="promo_modal_header">
+                            <div class="promo-item">
+                                <h5>Title</h5>
+                            </div>
+                            <div class="promo-item">
+                                <h5>Type</h5>
+                            </div>
+                            <div class="promo-item">
+                                <h5>Item</h5>
+                            </div>
+                            <div class="promo-item">
+                                <h5>Discount</h5>
+                            </div>
+                        </div>
+                        <div class="promo_modal_body">
+                            <div class="promo-single-item">
+                                <p>Business Card</p>
+                            </div>
+                            <div class="promo-single-item">
+                                <p>Online</p>
+                            </div>
+                            <div class="promo-single-item">
+                                <p>Plastic</p>
+                            </div>
+                            <div class="promo-single-item">
+                                <p>10%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_footer">
+                    <button class="cancel_button red" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Promo Modal -->
+
+
+    <!-- Add Customer Modal -->
+    <div class="modal fade mainModal" id="addCustomerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">Add Customer</h2>
+                </div>
+                <form action="">
+                    <div class="modal_body">
+                        <div class="form-group">
+                            <label for="firstName" class="important">Name</label>
+                            <input type="text" placeholder="Name" autocomplete="off" id="firstName">
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber" class="important">Phone</label>
+                            <input type="number" placeholder="Phone" autocomplete="off" id="phoneNumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailAddress">Email</label>
+                            <input type="email" placeholder="Email" autocomplete="off" id="emailAddress">
+                        </div>
+                        <div class="double-form-group">
+                            <div class="form-group">
+                                <label for="openingBalance">Opening Balance</label>
+                                <input type="number" placeholder="Opening Balance" autocomplete="off"
+                                    id="openingBalance">
+                            </div>
+                            <div class="form-group">
+                                <label>Opening Balance Type</label>
+                                <select>
+                                    <option value="">Debit</option>
+                                    <option value="">Credit</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="creditLimit">Credit Limit</label>
+                            <input type="number" placeholder="Credit Limit" autocomplete="off" id="creditLimit">
+                        </div>
+                        <div class="form-group">
+                            <label for="defaultDiscount">Default Discount</label>
+                            <input type="number" placeholder="10 or 10%" autocomplete="off" id="defaultDiscount">
+                        </div>
+                        <div class="form-group">
+                            <label>Customer Type</label>
+                            <select>
+                                <option value="">Retail</option>
+                                <option value="">Wholesale</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Group</label>
+                            <select>
+                                <option value="">Select</option>
+                                <option value="">Indian</option>
+                                <option value="">Europian</option>
+                                <option value="">Karela</option>
+                                <option value="">Tamil Nadu</option>
+                                <option value="">BD</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="deliveryAddress">Delivery Address</label>
+                            <input type="text" placeholder="Delivery Address" autocomplete="off" id="deliveryAddress">
+                        </div>
+                        <div class="form-group">
+                            <label class="important">Same or Different State</label>
+                            <select>
+                                <option value="">Select</option>
+                                <option value="">Same State</option>
+                                <option value="">Different State</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="gstNo" class="important">GST No</label>
+                            <input type="text" placeholder="GST No" autocomplete="off" id="gstNo">
+                        </div>
+                        <div class="form-group">
+                            <label for="dateOfBirth">Date Of Birth</label>
+                            <input type="text" placeholder="Date Of Birth" autocomplete="off" class="datepickerBirth"
+                                id="dateOfBirth">
+                        </div>
+                        <div class="form-group">
+                            <label for="dateOfAnniversary">Date Of Anniversary</label>
+                            <input type="text" placeholder="Date Of Anniversary" autocomplete="off"
+                                class="datepickerBirth" id="dateOfAnniversary">
+                        </div>
+                    </div>
+                    <div class="modal_footer">
+                        <button class="blue" data-bs-dismiss="modal">Submit</button>
+                        <button type="button" class="red" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Add Customer Modal -->
+
+
+    <!-- Edit Customer Modal -->
+    <div class="modal fade mainModal" id="editCustomerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">Edit Customer</h2>
+                </div>
+                <form action="">
+                    <div class="modal_body">
+                        <div class="form-group">
+                            <label for="editFirstName" class="important">Name</label>
+                            <input type="text" value="Mr.John" autocomplete="off" id="editFirstName">
+                        </div>
+                        <div class="form-group">
+                            <label for="editPhoneNumber" class="important">Phone</label>
+                            <input type="number" value="5557890" autocomplete="off" id="editPhoneNumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="editEmailAddress">Email</label>
+                            <input type="email" placeholder="Email" autocomplete="off" id="editEmailAddress">
+                        </div>
+                        <div class="double-form-group">
+                            <div class="form-group">
+                                <label for="editOpeningBalance">Opening Balance</label>
+                                <input type="number" value="0" autocomplete="off" id="editOpeningBalance">
+                            </div>
+                            <div class="form-group">
+                                <label>Opening Balance Type</label>
+                                <select>
+                                    <option value="">Debit</option>
+                                    <option value="">Credit</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="editCreditLimit">Credit Limit</label>
+                            <input type="number" value="0" autocomplete="off" id="editCreditLimit">
+                        </div>
+                        <div class="form-group">
+                            <label for="editDefaultDiscount">Default Discount</label>
+                            <input type="number" value="0" autocomplete="off" id="editDefaultDiscount">
+                        </div>
+                        <div class="form-group">
+                            <label>Customer Type</label>
+                            <select>
+                                <option value="">Retail</option>
+                                <option value="">Wholesale</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Group</label>
+                            <select>
+                                <option value="">Select</option>
+                                <option value="">Indian</option>
+                                <option value="">Europian</option>
+                                <option value="">Karela</option>
+                                <option value="">Tamil Nadu</option>
+                                <option value="">BD</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="editDeliveryAddress">Delivery Address</label>
+                            <input type="text" value="101 Cedar Lane, Unit 4, Downtown, Seattle, WA 98101"
+                                autocomplete="off" id="editDeliveryAddress">
+                        </div>
+                        <div class="form-group">
+                            <label class="important">Same or Different State</label>
+                            <select>
+                                <option value="">Select</option>
+                                <option value="">Same State</option>
+                                <option value="">Different State</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="editGstNo" class="important">GST No</label>
+                            <input type="text" value="505" autocomplete="off" id="editGstNo">
+                        </div>
+                        <div class="form-group">
+                            <label for="editDateOfBirth">Date Of Birth</label>
+                            <input type="text" placeholder="Date Of Birth" autocomplete="off" class="datepickerBirth"
+                                id="editDateOfBirth">
+                        </div>
+                        <div class="form-group">
+                            <label for="editDateOfAnniversary">Date Of Anniversary</label>
+                            <input type="text" placeholder="Date Of Anniversary" autocomplete="off"
+                                class="datepickerBirth" id="editDateOfAnniversary">
+                        </div>
+                    </div>
+                    <div class="modal_footer">
+                        <button class="blue" data-bs-dismiss="modal">Submit</button>
+                        <button type="button" class="red" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Edit Customer Modal -->
+
+
+    <!-- Payment Modal -->
+    <div class="modal fade mainModal" id="paymentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">Payment</h2>
+                </div>
+                <form action="">
+                    <div class="modal_body">
+                        <div class="form-group">
+                            <label for="receivedAmount">Received Amount</label>
+                            <input type="number" value="7275.00" autocomplete="off" id="receivedAmount">
+                        </div>
+                        <div class="form-group">
+                            <label for="pendingAmount">Pending Amount</label>
+                            <input type="number" value="7275.00" autocomplete="off" id="pendingAmount"
+                                class="pendingAmount">
+                        </div>
+                        <div class="form-group">
+                            <label>Payment Type</label>
+                            <select>
+                                <option value="">Cash</option>
+                                <option value="">Bank Card</option>
+                                <option value="">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="important">Payment Status</label>
+                            <select>
+                                <option value="">Paid</option>
+                                <option value="">Unpaid</option>
+                                <option value="">Nisyə (yarımçıq ödəniş)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="important">Order Status</label>
+                            <select>
+                                <option value="">Completed</option>
+                                <option value="">Unompleted</option>
+                                <option value="">Awaiting Payment</option>
+                                <option value="">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="paymentNote">Note</label>
+                            <input type="text" placeholder="Enter Note" autocomplete="off" id="paymentNote">
+                        </div>
+                    </div>
+                    <div class="modal_footer">
+                        <button class="blue" data-bs-dismiss="modal">Submit</button>
+                        <button class="print_button blue" data-bs-dismiss="modal">Submit & Print</button>
+                        <button type="button" class="red" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Payment Modal -->
+
+
+    <!-- More Payment Modal -->
+    <div class="modal fade mainModal" id="morePaymentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">More Payment</h2>
+                </div>
+                <form action="">
+                    <div class="modal_body">
+                        <div class="form-group">
+                            <label for="receivedMoreAmount">Received Amount</label>
+                            <input type="number" value="7275.00" autocomplete="off" id="receivedMoreAmount">
+                        </div>
+                        <div class="form-group">
+                            <label for="pendingMoreAmount">Pending Amount</label>
+                            <input type="number" value="7275.00" autocomplete="off" id="pendingMoreAmount"
+                                class="pendingAmount">
+                        </div>
+                        <div class="form-group">
+                            <label>Payment Type</label>
+                            <select>
+                                <option value="">Cash</option>
+                                <option value="">Bank Card</option>
+                                <option value="">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="important">Payment Status</label>
+                            <select>
+                                <option value="">Paid</option>
+                                <option value="">Unpaid</option>
+                                <option value="">Nisyə (yarımçıq ödəniş)</option>
+                            </select>
+                        </div>
+                        <div class="more_payment_methods">
+                            <div class="button">Ödənişi hissələrə böl</div>
+                            <div class="context">
+                                <div class="icon"><img src="assets/images/svg/infoCircle.svg" alt=""></div>
+                                <div class="text">Ödənişin bir qismini nağd, bir qismini kartla, başqa qismini başqa
+                                    <br> ödəniş metodu ilə qəbul edirsinizsə, bu seçilməlidir.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="horizontal_line"></div>
+
+
+
+                        <div class="form-group">
+                            <label class="important">Order Status</label>
+                            <select>
+                                <option value="">Completed</option>
+                                <option value="">Unompleted</option>
+                                <option value="">Awaiting Payment</option>
+                                <option value="">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="paymentMoreNote">Note</label>
+                            <input type="text" placeholder="Enter Note" autocomplete="off" id="paymentMoreNote">
+                        </div>
+                    </div>
+                    <div class="modal_footer">
+                        <button class="blue" data-bs-dismiss="modal">Submit</button>
+                        <button class="print_button blue" data-bs-dismiss="modal">Submit & Print</button>
+                        <button type="button" class="red" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- More Payment Modal -->
+
+
+    <!-- Note Modal -->
+    <div class="modal fade mainModal second" id="noteModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">Note</h2>
+                </div>
+                <form action="">
+                    <div class="modal_body">
+                        <div class="form-group">
+                            <label for="noteText">Note</label>
+                            <textarea id="noteText" placeholder="Note"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal_footer">
+                        <button class="blue" data-bs-dismiss="modal">Submit</button>
+                        <button type="button" class="red" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Note Modal -->
+
+
+    <!-- Coupon Discount Modal -->
+    <div class="modal fade mainModal second" id="couponDiscountModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">Discount coupon (on entire sale)</h2>
+                </div>
+                <form action="">
+                    <div class="modal_body">
+                        <div class="form-group">
+                            <label for="couponCodeModal">Coupon Code</label>
+                            <input type="text" placeholder="Coupon Code" autocomplete="off" id="couponCodeModal">
+                        </div>
+                    </div>
+                    <div class="modal_footer">
+                        <button class="blue" data-bs-dismiss="modal">Submit</button>
+                        <button type="button" class="red" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Coupon Discount Modal -->
+
+
+    <!-- Delivery Partner Modal -->
+    <div class="modal fade mainModal second" id="deliveryPartnerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">Delivery Partner</h2>
+                </div>
+                <form action="">
+                    <div class="modal_body">
+                        <div class="form-group">
+                            <label>Delivery Partner</label>
+                            <select>
+                                <option value="">Select</option>
+                                <option value="">Ecom Express</option>
+                                <option value="">DTDC</option>
+                                <option value="">Blue Dart</option>
+                                <option value="">FexEX</option>
+                                <option value="">DHL Service</option>
+                                <option value="">Pathao</option>
+                                <option value="">Daraz</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal_footer">
+                        <button class="blue" data-bs-dismiss="modal">Submit</button>
+                        <button type="button" class="red" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Delivery Partner Modal -->
+
+
+    <!-- Charge Modal -->
+    <div class="modal fade mainModal second" id="chargeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">Charge</h2>
+                </div>
+                <form action="">
+                    <div class="modal_body">
+                        <div class="form-group">
+                            <label>Type</label>
+                            <select>
+                                <option value="">Delivery</option>
+                                <option value="">Service</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="chargeAmount">Amount</label>
+                            <input type="number" value="0.00" min="0" max="99" autocomplete="off" id="chargeAmount">
+                        </div>
+                    </div>
+                    <div class="modal_footer">
+                        <button class="blue" data-bs-dismiss="modal">Submit</button>
+                        <button type="button" class="red" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Charge Modal -->
+
+
+    <!-- Hold Modal -->
+    <div class="modal fade mainModal second" id="holdModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">Hold</h2>
+                </div>
+                <form action="">
+                    <div class="modal_body">
+                        <div class="form-group">
+                            <label for="holdNumber" class="important">Hold Number</label>
+                            <input type="number" value="7" autocomplete="off" id="holdNumber">
+                        </div>
+                    </div>
+                    <div class="modal_footer">
+                        <button class="blue" data-bs-dismiss="modal">Submit</button>
+                        <button type="button" class="red" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Hold Modal -->
+
+
+    <!-- Discount Modal -->
+    <div class="modal fade mainModal second" id="discountModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">Discount</h2>
+                </div>
+                <form action="">
+                    <div class="modal_body">
+                        <div class="form-group">
+                            <label for="discountCodeModal">Discount Permission Code</label>
+                            <input type="text" placeholder="Discount Permission Code" autocomplete="off"
+                                id="discountCodeModal">
+                        </div>
+                    </div>
+                    <div class="modal_footer">
+                        <button class="blue" data-bs-dismiss="modal">Submit</button>
+                        <button type="button" class="red" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Discount Modal -->
+
+
+    <!-- Tax Modal -->
+    <div class="modal fade mainModal second" id="taxModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">Tax Details</h2>
+                </div>
+                <form action="">
+                    <div class="modal_body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Tax Name</th>
+                                    <th>Tax Percent</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Income Tax</td>
+                                    <td>12.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Value Added Tax</td>
+                                    <td>7.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Excise Tax</td>
+                                    <td>3.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Consumption Tax</td>
+                                    <td>18.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal_footer">
+                        <button type="button" class="red" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Tax Modal -->
+
+
+    <!-- Add To Cart Modal -->
+    <div class="modal fade mainModal second" id="addToCartModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">A-Cal DX Tablet 500 mg+400 IU (30Pcs Pot)(10000)</h2>
+                </div>
+                <form action="">
+                    <div class="modal_body">
+                        <div class="form-group">
+                            <label for="itemQuantity">Quantity</label>
+                            <div class="input qunatity_input">
+                                <div class="minus"><img src="assets/images/svg/circleMinus.svg"></div>
+                                <input type="number" value="1" min="1" max="999" autocomplete="off" id="itemQuantity">
+                                <div class="plus"><img src="assets/images/svg/circlePlus.svg"></div>
+                                <select>
+                                    <option value="" selected disabled>Miqdar</option>
+                                    <option value="">Kiloqram</option>
+                                    <option value="">Qram</option>
+                                    <option value="">Litr</option>
+                                    <option value="">Ədəd</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="itemPrice">Price</label>
+                            <input type="number" value="246.00" autocomplete="off" id="itemPrice">
+                        </div>
+                        <div class="form-group">
+                            <label for="itemDiscount">Discount (%)</label>
+                            <select>
+                                <option value="">Fixed</option>
+                                <option value="">Percentage</option>
+                            </select>
+                            <input type="number" autocomplete="off" id="itemDiscount">
+                            <div class="addcart_total">Total: <span>20993.00</span></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="itemNote">Note</label>
+                            <textarea id="itemNote" placeholder="Note"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal_footer">
+                        <button type="button" class="blue" data-bs-dismiss="modal">Add To Cart</button>
+                        <button type="button" class="red" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Add To Cart Modal -->
+
+
+    <!-- Barcode Scanner Modal -->
+    <div class="modal fade mainModal second" id="barcodeScannerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" data-bs-dismiss="modal" class="modalCloseButton"><img
+                        src="assets/images/svg/cancel.svg" alt=""></a>
+                <div class="modal_header">
+                    <h2 class="fix-class">Barcode Scanner</h2>
+                </div>
+                <form action="">
+                    <div class="modal_body">
+                        <div id="barcodeReader"></div>
+                    </div>
+                    <div class="modal_footer">
+                        <button type="button" class="red" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Barcode Scanner Modal -->
+
+
+    <!-- Filter Offcanvas -->
+    <div class="offcanvas offcanvas-end filter_offcanvas d-sm-none" tabindex="-1">
+        <div class="header">
+            <div class="text">Filter</div>
+            <div class="offCanvasCloseButton" data-bs-dismiss="offcanvas"><img src="assets/images/svg/cancel.svg"
+                    alt=""></div>
+        </div>
+        <div class="body">
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/mobileServicing.svg" alt=""></div>
+                <div class="text">Mobile Servicing</div>
+            </div>
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/laptopServicing.svg" alt=""></div>
+                <div class="text">Laptop Servicing</div>
+            </div>
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/electronics.svg" alt=""></div>
+                <div class="text">Electronic</div>
+            </div>
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/bikeSerciving.svg" alt=""></div>
+                <div class="text">Bike Servicing</div>
+            </div>
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/carServicing.svg" alt=""></div>
+                <div class="text">Car Servicing</div>
+            </div>
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/product.svg" alt=""></div>
+                <div class="text">Product</div>
+            </div>
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/washingDishes.svg" alt=""></div>
+                <div class="text">Dishwashing Supplies</div>
+            </div>
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/personalCare.svg" alt=""></div>
+                <div class="text">Personal Care</div>
+            </div>
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/accessories.svg" alt=""></div>
+                <div class="text">Accessories</div>
+            </div>
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/petCare.svg" alt=""></div>
+                <div class="text">Pet Care</div>
+            </div>
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/babyCare.svg" alt=""></div>
+                <div class="text">Baby Care</div>
+            </div>
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/softDrink.svg" alt=""></div>
+                <div class="text">Soft Drink</div>
+            </div>
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/fruitVegetable.svg" alt=""></div>
+                <div class="text">Fruits & Vegetables</div>
+            </div>
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/cooking.svg" alt=""></div>
+                <div class="text">Cooking</div>
+            </div>
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/furnutire.svg" alt=""></div>
+                <div class="text">Home & Kitchen</div>
+            </div>
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/processor.svg" alt=""></div>
+                <div class="text">RAM and Processor</div>
+            </div>
+            <div class="offcanvas_item openSecondOffcanvas">
+                <div class="icon"><img src="assets/images/svg/smartWatch.svg" alt=""></div>
+                <div class="text">Smart Watch</div>
+            </div>
+        </div>
+    </div>
+    <!-- Filter Offcanvas -->
+
+
+    <!-- Filter Offcanvas 2 -->
+    <div class="offcanvas offcanvas-end filter_offcanvas2 d-sm-none" tabindex="-1">
+        <div class="header">
+            <div class="text">Filter</div>
+            <div class="offCanvasCloseButton" data-bs-dismiss="offcanvas"><img src="assets/images/svg/cancel.svg"
+                    alt=""></div>
+        </div>
+        <div class="body">
+            <div class="offcanvas_inner_item"><a href="">Mobile Servicing</a></div>
+            <div class="offcanvas_inner_item"><a href="">Laptop Servicing</a></div>
+            <div class="offcanvas_inner_item"><a href="">Electronic</a></div>
+            <div class="offcanvas_inner_item"><a href="">Bike Servicing</a></div>
+            <div class="offcanvas_inner_item"><a href="">Car Servicing</a></div>
+            <div class="offcanvas_inner_item"><a href="">Product</a></div>
+            <div class="offcanvas_inner_item"><a href="">Dishwashing Supplies</a></div>
+            <div class="offcanvas_inner_item"><a href="">Personal Care</a></div>
+            <div class="offcanvas_inner_item"><a href="">Accessories</a></div>
+            <div class="offcanvas_inner_item"><a href="">Pet Care</a></div>
+            <div class="offcanvas_inner_item"><a href="">Baby Care</a></div>
+            <div class="offcanvas_inner_item"><a href="">Soft Drink</a></div>
+            <div class="offcanvas_inner_item"><a href="">Fruits & Vegetables</a></div>
+            <div class="offcanvas_inner_item"><a href="">Cooking</a></div>
+            <div class="offcanvas_inner_item"><a href="">Home & Kitchen</a></div>
+            <div class="offcanvas_inner_item"><a href="">RAM and Processor</a></div>
+            <div class="offcanvas_inner_item"><a href="">Smart Watch</a></div>
+        </div>
+    </div>
+    <!-- Filter Offcanvas 2 -->
+
+
+    <!-- Audios -->
+    <audio id="clickSound">
+        <source src="./assets/media/click.mp3" type="audio/mp3">
+    </audio>
+    <audio id="removeSound">
+        <source src="./assets/media/remove.mp3" type="audio/mp3">
+    </audio>
+    <!-- Audios -->
+
+
+
+
+
+
+
+    <!-- Jqeury JS -->
+    <script src="assets/vendor/jqeury/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Iconify JS -->
+    <script src="assets/vendor/iconify/iconify.min.js"></script>
+    <!-- QR Code Scanner JS -->
+    <script src="assets/vendor/html5-qrcode/html5-qrcode.min.js"></script>
+    <!-- SweetAlert JS -->
+    <script src="assets/vendor/sweetalert2/sweetalert2-new.all.min.js"></script>
+    <!-- Select2 JS -->
+    <script src="assets/vendor/select2/select2.full.min.js"></script>
+    <!-- Calculator JS -->
+    <script src="assets/vendor/calculator/calculator.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Bootstrap DatePicker JS -->
+    <script src="assets/vendor/datepicker/datepicker.js"></script>
+    <!-- Tippy and Popper JS -->
+    <script src="assets/vendor/tippy/popper.js"></script>
+    <script src="assets/vendor/tippy/tippy.js"></script>
+    <!-- Script JS -->
+    <script src="assets/js/script.js?v=070320251740"></script>
+</body>
+
+</html>
